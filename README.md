@@ -154,15 +154,15 @@
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">SSLC</td>
-        <td style="padding:10px; border:1px solid #ddd;">GHSS KAYAPAKKAM</td>
+        <td style="padding:10px; border:1px solid #ddd;">ghss kayapakkam</td>
         <td style="padding:10px; border:1px solid #ddd;">2022</td>
         <td style="padding:10px; border:1px solid #ddd;">70%</td>
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">HSC</td>
-        <td style="padding:10px; border:1px solid #ddd;">[ghss kayapakkam]</td>
-        <td style="padding:10px; border:1px solid #ddd;">[2024]</td>
-        <td style="padding:10px; border:1px solid #ddd;">[300/B]</td>
+        <td style="padding:10px; border:1px solid #ddd;">ghss kayapakkam</td>
+        <td style="padding:10px; border:1px solid #ddd;">2024</td>
+        <td style="padding:10px; border:1px solid #ddd;">300/B</td>
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">B.C.A</td>
@@ -176,9 +176,9 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="contact-info" style="text-align:center;">
-      <p><b>Date of Birth:</b> [14/09/2006]</p>
+      <p><b>Date of Birth:</b> 14/09/2006</p>
       <p><b>Address:</b> [pettai,Acharapakkam,Chengalpattu,Tamilnadu,India]</p>
-      <p><b>Email:</b> <a href="mailto:vickykaruna02@gmail.com">k.vignesh</a></p>
+      <p><b>Email:</b> <a href="mailto:vickykaruna02@gmail.com">vickykaruna02@gmail.com</a></p>
       <p><b>Mobile:</b> 7299101086</p>
     </div>
   </section>
