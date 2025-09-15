@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #007bff;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    /* Skills */
+    .skill-bar {
+      margin: 10px 0;
+    }
+    .skill-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .bar {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 18px;
+      border-radius: 20px;
+      background: #007bff;
+      text-align: right;
+      padding-right: 8px;
+      color: white;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    /* Education Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    table th, table td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    table th {
+      background: #007bff;
+      color: #fff;
+    }
+    /* Personal Details */
+    .details {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .details p {
+      margin: 10px 0;
+    }
+    /* Contact */
+    .contact {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .contact button {
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact button:hover {
+      background: #0056b3;
+    }
+    .social {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    /* Responsive */
+    @media(max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+      }
+      nav a {
+        margin: 8px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#personal">Personal</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>K. vignesh</h1>
+    <p>second year | Python & Java Enthusiast | Typewriting Skills</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center;">I am a passionate second year student with strong skills in Python, Java, and Type Writing. I love solving problems and building useful applications with creativity and dedication.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <div class="skill-title">Python</div>
+      <div class="bar"><div class="bar-fill" style="width: 85%;">85%</div></div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-title">Java</div>
+      <div class="bar"><div class="bar-fill" style="width: 80%;">80%</div></div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-title">Type Writing</div>
+      <div class="bar"><div class="bar-fill" style="width: 95%;">95%</div></div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Percentage/CGPA</th>
+      </tr>
+      <tr>
+        <td>B.C.A</td>
+        <td>sri malolan college of arts and science</td>
+        <td>2024 - 2027</td>
+        <td>8.5 CGPA</td>
+      </tr>
+      <tr>
+        <td>Higher Secondary</td>
+        <td>ghss kayapakkam</td>
+        <td>2024</td>
+        <td>85%</td>
+      </tr>
+      <tr>
+        <td>SSLC</td>
+        <td>ghss kayapakkam</td>
+        <td>2022</td>
+        <td>90%</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Personal Details -->
+  <section id="personal">
+    <h2>Personal Details</h2>
+    <div class="details">
+      <p><strong>Name:</strong> k. vignesh</p>
+      <p><strong>Date of Birth:</strong> 14 september 2006</p>
+      <p><strong>Email:</strong> vickykaruna02@gmail.com.com</p>
+      <p><strong>Phone:</strong> +91 7299101086</p>
+      <p><strong>Address:</strong> Pettai,Acharapakkam, Tamil Nadu, India</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
