@@ -177,7 +177,7 @@
     <h2>Contact Me</h2>
     <div class="contact-info" style="text-align:center;">
       <p><b>Date of Birth:</b> 14/09/2006</p>
-      <p><b>Address:</b> [pettai,Acharapakkam,Chengalpattu,Tamilnadu,India]</p>
+      <p><b>Address:</b> pettai,Acharapakkam,Chengalpattu,Tamilnadu,India</p>
       <p><b>Email:</b> <a href="mailto:vickykaruna02@gmail.com">vickykaruna02@gmail.com</a></p>
       <p><b>Mobile:</b> 7299101086</p>
     </div>
