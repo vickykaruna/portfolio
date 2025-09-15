@@ -162,7 +162,7 @@
         <td style="padding:10px; border:1px solid #ddd;">HSC</td>
         <td style="padding:10px; border:1px solid #ddd;">ghss kayapakkam</td>
         <td style="padding:10px; border:1px solid #ddd;">2024</td>
-        <td style="padding:10px; border:1px solid #ddd;">450/B</td>
+        <td style="padding:10px; border:1px solid #ddd;">75%/B</td>
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">B.C.A</td>
