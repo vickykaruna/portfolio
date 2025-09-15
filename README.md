@@ -167,7 +167,7 @@
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">B.C.A</td>
         <td style="padding:10px; border:1px solid #ddd;">Sri Malolan College of Arts and Science</td>
-        <td style="padding:10px; border:1px solid #ddd;">2025</td>
+        <td style="padding:10px; border:1px solid #ddd;">2024-2027</td>
         <td style="padding:10px; border:1px solid #ddd;">Pursuing</td>
       </tr>
     </table>
