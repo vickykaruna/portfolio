@@ -147,10 +147,10 @@
     <h2>Education</h2>
     <table style="width:100%; border-collapse: collapse; text-align:center; font-size:1.1em;">
       <tr style="background:#1abc9c; color:white;">
-        <th style="padding:12px; border:1px solid #ddd;">debuging</th>
+        <th style="padding:12px; border:1px solid #ddd;">B.C.A</th>
         <th style="padding:12px; border:1px solid #ddd;">sri malolan college of arts and scinece</th>
         <th style="padding:12px; border:1px solid #ddd;">2024-2027/th>
-        <th style="padding:12px; border:1px solid #ddd;">Percentage / Grade</th>
+        <th style="padding:12px; border:1px solid #ddd;">75 / B</th>
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">SSLC</td>
@@ -162,7 +162,7 @@
         <td style="padding:10px; border:1px solid #ddd;">HSC</td>
         <td style="padding:10px; border:1px solid #ddd;">ghss kayapakkam</td>
         <td style="padding:10px; border:1px solid #ddd;">2024</td>
-        <td style="padding:10px; border:1px solid #ddd;">300/B</td>
+        <td style="padding:10px; border:1px solid #ddd;">450/B</td>
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">B.C.A</td>
