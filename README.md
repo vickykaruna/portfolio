@@ -147,10 +147,10 @@
     <h2>Education</h2>
     <table style="width:100%; border-collapse: collapse; text-align:center; font-size:1.1em;">
       <tr style="background:#1abc9c; color:white;">
-        <th style="padding:12px; border:1px solid #ddd;">B.C.A</th>
-        <th style="padding:12px; border:1px solid #ddd;">sri malolan college of arts and scinece</th>
-        <th style="padding:12px; border:1px solid #ddd;">2024-2027/th>
-        <th style="padding:12px; border:1px solid #ddd;">75 / B</th>
+        <th style="padding:12px; border:1px solid #ddd;">Qualification</th>
+        <th style="padding:12px; border:1px solid #ddd;">Institution</th>
+        <th style="padding:12px; border:1px solid #ddd;">Year/th>
+        <th style="padding:12px; border:1px solid #ddd;">Percentage / grade</th>
       </tr>
       <tr>
         <td style="padding:10px; border:1px solid #ddd;">SSLC</td>
