@@ -3,265 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>k. vignesh | Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      scroll-behavior: smooth;
-    }
-    body {
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9f9f9; color: #333;}
+    a {text-decoration: none; color: inherit;}
+    
     /* Navbar */
     nav {
-      position: sticky;
+      position: fixed;
+      width: 100%;
       top: 0;
-      background: #007bff;
-      padding: 12px 20px;
+      left: 0;
+      background: #2c3e50;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
       z-index: 1000;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffeb3b;
-    }
+    nav h1 {color: #fff; font-size: 1.5em;}
+    nav ul {list-style: none; display: flex;}
+    nav ul li {margin: 0 15px;}
+    nav ul li a {color: #fff; font-weight: 500; transition: 0.3s;}
+    nav ul li a:hover {color: #1abc9c;}
+    
+    /* Header */
     header {
-      background: linear-gradient(135deg, #007bff, #00c6ff);
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: white;
-      padding: 60px 20px;
       text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
       padding: 20px;
     }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #007bff;
-    }
-    /* Skills */
-    .skill-bar {
-      margin: 10px 0;
-    }
-    .skill-title {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .bar {
-      background: #ddd;
-      border-radius: 20px;
-      overflow: hidden;
-    }
-    .bar-fill {
-      height: 18px;
-      border-radius: 20px;
-      background: #007bff;
-      text-align: right;
-      padding-right: 8px;
+    header h2 {font-size: 2.5em;}
+    header p {font-size: 1.2em; margin-top: 10px;}
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #1abc9c;
       color: white;
-      font-size: 12px;
-      line-height: 18px;
-    }
-    /* Education Table */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    table th, table td {
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-    table th {
-      background: #007bff;
-      color: #fff;
-    }
-    /* Personal Details */
-    .details {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    .details p {
-      margin: 10px 0;
-    }
-    /* Contact */
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    .contact input, .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    .contact button {
-      background: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      border-radius: 5px;
       transition: 0.3s;
     }
-    .contact button:hover {
-      background: #0056b3;
+    .btn:hover {background: #16a085;}
+    
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .social {
+    section h2 {
       text-align: center;
-      margin-top: 15px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-size: 2em;
     }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #007bff;
+    
+    /* Skills */
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: #1abc9c;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
       font-weight: bold;
+      transition: 0.3s;
     }
-    /* Responsive */
-    @media(max-width: 768px) {
-      nav {
-        flex-wrap: wrap;
-      }
-      nav a {
-        margin: 8px;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
+    .skill:hover {background: #16a085;}
+    
+    /* Contact */
+    .contact-info p {margin: 10px 0; font-size: 1.1em;}
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
     }
+
+    /* Smooth scroll */
+    html {scroll-behavior: smooth;}
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navbar -->
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#personal">Personal</a>
-    <a href="#contact">Contact</a>
+    <h1>K. vignesh</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#sample">sample</a></li>
+
+    </ul>
   </nav>
 
   <!-- Header -->
-  <header id="home">
-    <h1>K. vignesh</h1>
-    <p>second year | Python & Java Enthusiast | Typewriting Skills</p>
+  <header>
+    <h2>Hello, I'm <span style="color:#1abc9c;">K. vignesh</span></h2>
+    <p>Student | second Year B.C.A</p>
+    <a href="#contact" class="btn">Get in Touch</a>
   </header>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p style="text-align:center;">I am a passionate second year student with strong skills in Python, Java, and Type Writing. I love solving problems and building useful applications with creativity and dedication.</p>
+    <p style="text-align:center;">I am <b>K. vignesh</b>, a passionate second-year BCA student. 
+      I enjoy solving problems using programming languages and developing efficient software solutions. 
+      My career goal is to grow as a skilled software developer while continuously learning new technologies.</p>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skill-bar">
-      <div class="skill-title">Python</div>
-      <div class="bar"><div class="bar-fill" style="width: 85%;">85%</div></div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-title">Java</div>
-      <div class="bar"><div class="bar-fill" style="width: 80%;">80%</div></div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-title">Type Writing</div>
-      <div class="bar"><div class="bar-fill" style="width: 95%;">95%</div></div>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">Type Writing</div>
+      <div class="skill">Web Development</div>
+       <div class="skill">C++</div>
     </div>
   </section>
 
-  <!-- Education -->
   <section id="education">
     <h2>Education</h2>
-    <table>
-      <tr>
-        <th>Course</th>
-        <th>Institution</th>
-        <th>Year</th>
-        <th>Percentage/CGPA</th>
+    <table style="width:100%; border-collapse: collapse; text-align:center; font-size:1.1em;">
+      <tr style="background:#1abc9c; color:white;">
+        <th style="padding:12px; border:1px solid #ddd;">debuging</th>
+        <th style="padding:12px; border:1px solid #ddd;">sri malolan college of arts and scinece</th>
+        <th style="padding:12px; border:1px solid #ddd;">2024-2027/th>
+        <th style="padding:12px; border:1px solid #ddd;">Percentage / Grade</th>
       </tr>
       <tr>
-        <td>B.C.A</td>
-        <td>sri malolan college of arts and science</td>
-        <td>2024 - 2027</td>
-        <td>8.5 CGPA</td>
+        <td style="padding:10px; border:1px solid #ddd;">SSLC</td>
+        <td style="padding:10px; border:1px solid #ddd;">GHSS KAYAPAKKAM</td>
+        <td style="padding:10px; border:1px solid #ddd;">2022</td>
+        <td style="padding:10px; border:1px solid #ddd;">70%</td>
       </tr>
       <tr>
-        <td>Higher Secondary</td>
-        <td>ghss kayapakkam</td>
-        <td>2024</td>
-        <td>85%</td>
+        <td style="padding:10px; border:1px solid #ddd;">HSC</td>
+        <td style="padding:10px; border:1px solid #ddd;">[ghss kayapakkam]</td>
+        <td style="padding:10px; border:1px solid #ddd;">[2024]</td>
+        <td style="padding:10px; border:1px solid #ddd;">[300/B]</td>
       </tr>
       <tr>
-        <td>SSLC</td>
-        <td>ghss kayapakkam</td>
-        <td>2022</td>
-        <td>90%</td>
+        <td style="padding:10px; border:1px solid #ddd;">B.C.A</td>
+        <td style="padding:10px; border:1px solid #ddd;">Sri Malolan College of Arts and Science</td>
+        <td style="padding:10px; border:1px solid #ddd;">2025</td>
+        <td style="padding:10px; border:1px solid #ddd;">Pursuing</td>
       </tr>
     </table>
   </section>
-
-  <!-- Personal Details -->
-  <section id="personal">
-    <h2>Personal Details</h2>
-    <div class="details">
-      <p><strong>Name:</strong> k. vignesh</p>
-      <p><strong>Date of Birth:</strong> 14 september 2006</p>
-      <p><strong>Email:</strong> vickykaruna02@gmail.com.com</p>
-      <p><strong>Phone:</strong> +91 7299101086</p>
-      <p><strong>Address:</strong> Pettai,Acharapakkam, Tamil Nadu, India</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <div class="contact">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="social">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Instagram</a>
-      </div>
+    <div class="contact-info" style="text-align:center;">
+      <p><b>Date of Birth:</b> [14/09/2006]</p>
+      <p><b>Address:</b> [pettai,Acharapakkam,Chengalpattu,Tamilnadu,India]</p>
+      <p><b>Email:</b> <a href="mailto:vickykaruna02@gmail.com">k.vignesh</a></p>
+      <p><b>Mobile:</b> 7299101086</p>
     </div>
   </section>
+
+
+
+  <footer>
+    © 2025 K. vignesh | Portfolio Website
+  </footer>
 
 </body>
 </html>
+
