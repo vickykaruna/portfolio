@@ -149,7 +149,7 @@
       <tr style="background:#1abc9c; color:white;">
         <th style="padding:12px; border:1px solid #ddd;">Qualification</th>
         <th style="padding:12px; border:1px solid #ddd;">Institution</th>
-        <th style="padding:12px; border:1px solid #ddd;">Year/th>
+        <th style="padding:12px; border:1px solid #ddd;">Year</th>
         <th style="padding:12px; border:1px solid #ddd;">Percentage / grade</th>
       </tr>
       <tr>
